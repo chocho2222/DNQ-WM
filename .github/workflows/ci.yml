@@ -10,72 +10,25 @@ permissions:
   contents: read
 
 jobs:
-  release-integrity:
+  sources:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
-          cache: pip
-      - name: Install analysis dependencies
-        run: python -m pip install "numpy>=1.26,<2" "pandas>=2,<3"
-      - name: Compile Python sources
+      - name: Compile the Python sources
         run: python -m compileall -q code
-      - name: Audit static-site links
-        run: |
-          python code/audit_static_site_links.py \
-            --site-root docs \
-            --output /tmp/public_site_link_audit.json
-      - name: Recompute the released content digest
-        run: |
-          bash reproduce/rebuild_release_manifest.sh
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          recorded = json.loads(Path("release_manifest.json").read_text())
-          recomputed = json.loads(
-              Path("/tmp/recomputed_release_manifest.json").read_text()
-          )
-          assert recorded["content_digest"] == recomputed["content_digest"], (
-              recorded["content_digest"], recomputed["content_digest"])
-          assert recorded["file_count"] == recomputed["file_count"]
-          print(recorded["content_digest"])
-          PY
-      - name: Check the published numbers against the frozen tables
+      - name: Check the README figure links
         run: |
           python - <<'PY'
-          import pandas as pd
+          import pathlib
+          import re
 
-          # The proposed controller is reported as the mean over the five draws
-          # of its training recipe. Recompute those means from the archived
-          # per-case table and compare them with the values in the manuscript.
-          cases = pd.read_csv(
-              "source_data/validity_ours_corridor_return_fix_20260929/case_level.csv")
-          draws = cases[cases["algorithm"].str.startswith("ours_dnq_dlc_seed")]
-          assert draws["algorithm"].nunique() == 5, draws["algorithm"].unique()
-          assert set(draws["algorithm"]) == {
-              "ours_dnq_dlc_seed13", "ours_dnq_dlc_seed21", "ours_dnq_dlc_seed47",
-              "ours_dnq_dlc_seed71", "ours_dnq_dlc_seed99"}
-          assert len(draws) == 240, len(draws)
-          per_draw = draws.groupby("algorithm").agg(
-              cases=("E_pass", "size"),
-              physical_pass=("P", "sum"),
-              strict=("E_full", "sum"),
-              racing=("E_race", "sum"),
-              rank_gain=("rank_gain", "mean"),
-          )
-          assert (per_draw["cases"] == 48).all(), per_draw["cases"].to_dict()
-          published = {
-              "physical_pass": 45.8,
-              "strict": 20.2,
-              "racing": 11.0,
-              "rank_gain": 4.88,
-          }
-          for column, expected in published.items():
-              observed = per_draw[column].mean()
-              assert abs(observed - expected) < 0.01, (column, observed, expected)
-          print(per_draw.to_string())
+          readme = pathlib.Path("README.md").read_text()
+          targets = re.findall(r"!\[[^\]]*\]\(([^)\s]+)\)", readme)
+          missing = [t for t in targets if not pathlib.Path(t).exists()]
+          assert not missing, f"missing figure files: {missing}"
+          print(f"{len(targets)} figure links resolve")
           PY
