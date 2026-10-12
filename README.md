@@ -45,25 +45,6 @@ on rank gain on all twelve tracks by $+2.39$ positions per case, 95 % interval
 $[+1.90, +2.88]$, and the rule expert on ten tracks by $+0.90$,
 $[+0.08, +1.68]$.
 
-![Positions gained and physical passes per case](figures/fig2_rank_passes.png)
-
-*Fig. 2. Progress of the six methods over the 48 shared cases ($n = 48$ cases per
-method); the red diamond marks the median. The density outline is omitted for a
-method with more than a quarter of its cases at one value.*
-
-![Tier rates](figures/fig3_tier_rates.png)
-
-*Fig. 3. Tier ladder of each method over the 48 cases ($n = 48$ cases per
-method). Each point gives the share of cases reaching at least that tier; error
-bars are Wilson 95 % intervals on cases, or the span of the draws for a method
-averaged over them.*
-
-![Containment over the whole episode](figures/fig4_containment.png)
-
-*Fig. 4. Containment over the whole episode ($n = 48$ cases per method; the red
-diamond marks the median). The lower row uses a logarithmic axis and its dashed
-line marks one half width.*
-
 ## Installation
 
 Linux with Python 3.10, using the pinned environment:
