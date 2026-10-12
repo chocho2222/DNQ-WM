@@ -17,7 +17,7 @@
     },
     {
       "name": "ours_corrected_v2_clr17w25",
-      "label_cn": "DNQ-DLC (final candidate)",
+      "label_cn": "DNQ-WM (final candidate)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",

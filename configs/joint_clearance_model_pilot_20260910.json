@@ -28,6 +28,6 @@
     "The teacher uses all agents and map geometry; K=3 student does not receive all teacher inputs",
     "Risk remains a boundary/reverse/lateral proxy, not contact probability",
     "No statistical performance conclusion follows from training loss",
-    "Teacher performance is not student or DNQ-DLC performance"
+    "Teacher performance is not student or DNQ-WM performance"
   ]
 }

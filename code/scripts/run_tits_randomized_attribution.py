@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Run matched, randomized DNQ-DLC attribution cases with a failure ledger."""
+"""Run matched, randomized DNQ-WM attribution cases with a failure ledger."""
 
 import argparse
 import csv

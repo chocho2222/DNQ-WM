@@ -23,7 +23,7 @@ MANDATED = {
 
 
 def test_method_aliases_and_unique_colors():
-    assert color_for_algorithm('DNQ-DLC') == color_for_algorithm('dnq_dlc_full')
+    assert color_for_algorithm('DNQ-WM') == color_for_algorithm('dnq_dlc_full')
     assert color_for_algorithm('DLC-JTO') == color_for_algorithm('dlc_joint_transition_observer')
     # The three continuous-control agents are one regime and deliberately share
     # one colour; marker and line style separate them. Every other arm owns a
@@ -38,7 +38,7 @@ def test_method_aliases_and_unique_colors():
 def test_mandated_palette_is_shipped_verbatim():
     for name, hex_color in MANDATED.items():
         assert PALETTE[name] == hex_color
-    assert color_for_algorithm('DNQ-DLC') == MANDATED['teal_green']
+    assert color_for_algorithm('DNQ-WM') == MANDATED['teal_green']
     assert color_for_algorithm('ours_corrected_v2_sball') == MANDATED['teal_green']
     assert color_for_algorithm('rule_expert_gate') == MANDATED['grass_green']
     assert color_for_algorithm('dlc_individual_transition') == MANDATED['bean_red']
@@ -81,7 +81,7 @@ class PaletteContractTests(unittest.TestCase):
 def test_assignment_survives_reset_and_view_changes():
     env = make_env(num_agents=2, seed=3, observation_type='telemetry_dynamic')
     try:
-        for assignment in [('DNQ-DLC', 'DLC-JTO'), ('DLC-JTO', 'DNQ-DLC')]:
+        for assignment in [('DNQ-WM', 'DLC-JTO'), ('DLC-JTO', 'DNQ-WM')]:
             bind_algorithm_colors(env, assignment)
             env.reset()
             expected = [hex_to_float_rgb(color_for_algorithm(a)) for a in assignment]

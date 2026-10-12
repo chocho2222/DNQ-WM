@@ -26,7 +26,7 @@ def identity(algorithm):
     if match:
         return match.group(1).upper(), match.group(2)
     labels = {
-        "dnq_dlc_full": "DNQ-DLC",
+        "dnq_dlc_full": "DNQ-WM",
         "rule_expert_gate": "Rule expert",
         "rule_safety_gate": "Safety rule",
     }
@@ -101,10 +101,10 @@ def main():
             }
         family_reports[family] = summary
 
-    dnq = {int(row["seed"]): row for row in rows if row["family"] == "DNQ-DLC"}
+    dnq = {int(row["seed"]): row for row in rows if row["family"] == "DNQ-WM"}
     paired = {}
     for key, report in checkpoint_reports.items():
-        if report["family"] == "DNQ-DLC":
+        if report["family"] == "DNQ-WM":
             continue
         family, training_seed = key.split("|", 1)
         items = checkpoints[(family, training_seed)]

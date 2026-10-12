@@ -40,7 +40,7 @@ import numpy as np
 FAMILY = {"ppo": "PPO", "sac": "SAC", "td3": "TD3"}
 MAIN_ORDER = ["ours_dnq_dlc", "rule_expert_gate", "dlc_joint_transition_observer",
               "dlc_individual_transition", "dlc_joint_transition"]
-LABEL = {"ours_dnq_dlc": "DNQ-DLC (ours)", "rule_expert_gate": "rule expert",
+LABEL = {"ours_dnq_dlc": "DNQ-WM (ours)", "rule_expert_gate": "rule expert",
          "dlc_joint_transition_observer": "DLC-JTO", "dlc_individual_transition": "DLC-IT",
          "dlc_joint_transition": "DLC-JT"}
 

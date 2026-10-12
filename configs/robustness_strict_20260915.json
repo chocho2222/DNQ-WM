@@ -20,7 +20,7 @@
   "algorithms": [
     {
       "name": "dnq_clean",
-      "label_cn": "DNQ-DLC clean",
+      "label_cn": "DNQ-WM clean",
       "kind": "proposed_clean",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -52,7 +52,7 @@
     },
     {
       "name": "dnq_noise_low",
-      "label_cn": "DNQ-DLC low noise",
+      "label_cn": "DNQ-WM low noise",
       "kind": "proposed_noise_robustness",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -84,7 +84,7 @@
     },
     {
       "name": "dnq_noise_high",
-      "label_cn": "DNQ-DLC high noise",
+      "label_cn": "DNQ-WM high noise",
       "kind": "proposed_noise_robustness",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -116,7 +116,7 @@
     },
     {
       "name": "dnq_delay_short",
-      "label_cn": "DNQ-DLC short delay",
+      "label_cn": "DNQ-WM short delay",
       "kind": "proposed_delay_robustness",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -148,7 +148,7 @@
     },
     {
       "name": "dnq_delay_long",
-      "label_cn": "DNQ-DLC long delay",
+      "label_cn": "DNQ-WM long delay",
       "kind": "proposed_delay_robustness",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

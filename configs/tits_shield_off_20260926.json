@@ -11,7 +11,7 @@
   "algorithms": [
     {
       "name": "ours_dnq_dlc",
-      "label_cn": "DNQ-DLC (ours)",
+      "label_cn": "DNQ-WM (ours)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -288,7 +288,7 @@
     },
     {
       "name": "ours_dnq_dlc_noshield",
-      "label_cn": "DNQ-DLC (ours, shield off)",
+      "label_cn": "DNQ-WM (ours, shield off)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",

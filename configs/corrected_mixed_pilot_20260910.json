@@ -23,7 +23,7 @@
     },
     {
       "name": "dnq_dlc_corrected_pilot",
-      "label_cn": "DNQ-DLC corrected pilot",
+      "label_cn": "DNQ-WM corrected pilot",
       "policy": "outputs/physical_quality_development_20260910/model_3000_updates/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",

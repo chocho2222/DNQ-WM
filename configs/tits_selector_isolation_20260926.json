@@ -11,7 +11,7 @@
   "algorithms": [
     {
       "name": "ours_dnq_dlc_fixed3",
-      "label_cn": "DNQ-DLC (fixed identity slots)",
+      "label_cn": "DNQ-WM (fixed identity slots)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_fixed3/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "fixed",
@@ -55,7 +55,7 @@
     },
     {
       "name": "ours_dnq_dlc_int3",
-      "label_cn": "DNQ-DLC (dynamic, interaction)",
+      "label_cn": "DNQ-WM (dynamic, interaction)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -99,7 +99,7 @@
     },
     {
       "name": "ours_dnq_dlc_nearest3",
-      "label_cn": "DNQ-DLC (dynamic, nearest)",
+      "label_cn": "DNQ-WM (dynamic, nearest)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_nearest3/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "nearest",

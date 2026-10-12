@@ -11,7 +11,7 @@
   "algorithms": [
     {
       "name": "i5_k3",
-      "label_cn": "DNQ-DLC five-slot (interaction, k=3)",
+      "label_cn": "DNQ-WM five-slot (interaction, k=3)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_i5/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -55,7 +55,7 @@
     },
     {
       "name": "i5_k5",
-      "label_cn": "DNQ-DLC five-slot (interaction, k=5)",
+      "label_cn": "DNQ-WM five-slot (interaction, k=5)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_i5/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",

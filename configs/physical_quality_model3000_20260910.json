@@ -15,5 +15,5 @@
     "same_map_dynamics_background": true
   },
   "preservation": "All cases and failures retained; no outcome filtering or test-based tuning",
-  "evidence_limit": "Training loss and this four-case development run do not establish DNQ-DLC performance or module attribution"
+  "evidence_limit": "Training loss and this four-case development run do not establish DNQ-WM performance or module attribution"
 }

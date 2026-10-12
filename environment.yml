@@ -1,4 +1,4 @@
-name: dnq-dlc
+name: dnq-wm
 channels:
   - conda-forge
 dependencies:

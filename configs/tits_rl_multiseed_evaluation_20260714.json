@@ -1,5 +1,5 @@
 {
-  "protocol": "Frozen evaluation of 3-seed, 200k-step PPO/SAC/TD3 checkpoints against unchanged DNQ-DLC and rule baselines.",
+  "protocol": "Frozen evaluation of 3-seed, 200k-step PPO/SAC/TD3 checkpoints against unchanged DNQ-WM and rule baselines.",
   "dynamic_graph": {
     "max_neighbors": 3,
     "neighbor_selection_mode": "interaction"
@@ -7,7 +7,7 @@
   "algorithms": [
     {
       "name": "dnq_dlc_full",
-      "label_cn": "DNQ-DLC",
+      "label_cn": "DNQ-WM",
       "kind": "unchanged_full_controller",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

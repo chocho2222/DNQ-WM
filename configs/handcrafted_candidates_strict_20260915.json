@@ -9,7 +9,7 @@
   "algorithms": [
     {
       "name": "dnq_full_candidates",
-      "label_cn": "DNQ-DLC full candidate set",
+      "label_cn": "DNQ-WM full candidate set",
       "kind": "proposed_full",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -39,7 +39,7 @@
     },
     {
       "name": "dnq_without_handcrafted_candidates",
-      "label_cn": "DNQ-DLC without handcrafted candidates",
+      "label_cn": "DNQ-WM without handcrafted candidates",
       "kind": "single_factor_candidate_ablation",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

@@ -11,7 +11,7 @@
   "algorithms": [
     {
       "name": "ours_dnq_dlc_ensemble",
-      "label_cn": "DNQ-DLC (ensemble of 5 world models)",
+      "label_cn": "DNQ-WM (ensemble of 5 world models)",
       "policy": [
         "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt/graph_risk_dlc_world.graphworld.pt",
         "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt_seed21/graph_risk_dlc_world.graphworld.pt",

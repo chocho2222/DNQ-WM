@@ -46,7 +46,7 @@
       "planner_risk_weight": 1.65,
       "planner_uncertainty_weight": 0.4,
       "overtake_aware_planner": true,
-      "quality_proposal_path": "checkpoints/dnq_dlc/graph_bc.graph.pt",
+      "quality_proposal_path": "checkpoints/dnq_wm/graph_bc.graph.pt",
       "quality_planner_mode": "quality_guided_rollout",
       "quality_rollout_blend": 0.25,
       "quality_overtake_weight": 0.18,
@@ -62,7 +62,7 @@
       "geometry_min_speed": 9.5,
       "geometry_anchor_blend": 0.38,
       "geometry_barrier_weight": 0.75,
-      "policy": "checkpoints/dnq_dlc/graph_risk_dlc_world.graphworld.pt"
+      "policy": "checkpoints/dnq_wm/graph_risk_dlc_world.graphworld.pt"
     },
     {
       "name": "rule_expert_gate",
@@ -108,7 +108,7 @@
     {
       "name": "ppo_continuous",
       "label_cn": "ppo_continuous",
-      "policy": "checkpoints/rl_baselines/ppo_continuous/ppo_continuous.sb3.zip",
+      "policy": "checkpoints/rl_baselines_strict_20260926/ppo_continuous/seed2026001/ppo_continuous.sb3.zip",
       "neighbor_mode": "fixed",
       "max_neighbors": null,
       "kind": "rl_baseline"
@@ -116,7 +116,7 @@
     {
       "name": "sac_continuous",
       "label_cn": "sac_continuous",
-      "policy": "checkpoints/rl_baselines/sac_continuous/sac_continuous.sb3.zip",
+      "policy": "checkpoints/rl_baselines_strict_20260926/sac_continuous/seed2026001/sac_continuous.sb3.zip",
       "neighbor_mode": "fixed",
       "max_neighbors": null,
       "kind": "rl_baseline"
@@ -124,7 +124,7 @@
     {
       "name": "td3_continuous",
       "label_cn": "td3_continuous",
-      "policy": "checkpoints/rl_baselines/td3_continuous/td3_continuous.sb3.zip",
+      "policy": "checkpoints/rl_baselines_strict_20260926/td3_continuous/seed2026001/td3_continuous.sb3.zip",
       "neighbor_mode": "fixed",
       "max_neighbors": null,
       "kind": "rl_baseline"

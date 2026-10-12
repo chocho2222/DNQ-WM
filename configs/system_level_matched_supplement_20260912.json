@@ -9,7 +9,7 @@
   "algorithms": [
     {
       "name": "dnq_dlc_full",
-      "label_cn": "DNQ-DLC",
+      "label_cn": "DNQ-WM",
       "kind": "unchanged_full_controller",
       "policy": "outputs/physical_quality_development_20260910/model_3000_updates/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

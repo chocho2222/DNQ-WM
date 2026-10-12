@@ -11,7 +11,7 @@
   "algorithms": [
     {
       "name": "ours_dnq_dlc_noshield_seed13",
-      "label_cn": "DNQ-DLC shield off (world-model seed 13)",
+      "label_cn": "DNQ-WM shield off (world-model seed 13)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -62,7 +62,7 @@
     },
     {
       "name": "ours_dnq_dlc_noshield_seed21",
-      "label_cn": "DNQ-DLC shield off (world-model seed 21)",
+      "label_cn": "DNQ-WM shield off (world-model seed 21)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt_seed21/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -113,7 +113,7 @@
     },
     {
       "name": "ours_dnq_dlc_noshield_seed47",
-      "label_cn": "DNQ-DLC shield off (world-model seed 47)",
+      "label_cn": "DNQ-WM shield off (world-model seed 47)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt_seed47/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -164,7 +164,7 @@
     },
     {
       "name": "ours_dnq_dlc_noshield_seed71",
-      "label_cn": "DNQ-DLC shield off (world-model seed 71)",
+      "label_cn": "DNQ-WM shield off (world-model seed 71)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt_seed71/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",
@@ -215,7 +215,7 @@
     },
     {
       "name": "ours_dnq_dlc_noshield_seed99",
-      "label_cn": "DNQ-DLC shield off (world-model seed 99)",
+      "label_cn": "DNQ-WM shield off (world-model seed 99)",
       "policy": "outputs/tits_dynamic_graph_expanded/corrected_v2_20260920/wm_k15_sb_all_v4matt_seed99/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
       "neighbor_selection_mode": "interaction",

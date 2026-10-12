@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dnq-dlc"
+name = "dnq-wm"
 version = "0.1.0rc1"
 description = "Dynamic-neighborhood simulator framework for online multi-car overtaking"
 readme = "README.md"
@@ -39,9 +39,8 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/chocho2222/DNQ-DLC/tree/main/docs"
-Repository = "https://github.com/chocho2222/DNQ-DLC"
-Issues = "https://github.com/chocho2222/DNQ-DLC/issues"
+Repository = "https://github.com/chocho2222/DNQ-WM"
+Issues = "https://github.com/chocho2222/DNQ-WM/issues"
 
 [tool.setuptools]
 package-dir = {"" = "code"}

@@ -15,6 +15,6 @@
     "Map-based teacher has more inputs than the K=3 learned proposal",
     "Graph-DLC uses existing candidate/risk logic; joint-clearance candidate screening has not been integrated",
     "Later contact must be reported even after a contact-free retained pass",
-    "Do not label these controls as the final DNQ-DLC system"
+    "Do not label these controls as the final DNQ-WM system"
   ]
 }

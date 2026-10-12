@@ -18,7 +18,7 @@
   "algorithms": [
     {
       "name": "dnq_dlc_full",
-      "label_cn": "DNQ-DLC full",
+      "label_cn": "DNQ-WM full",
       "kind": "proposed_full",
       "policy": "outputs/tits_dynamic_graph/models/ours_dynamic_graph_dlc_world/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

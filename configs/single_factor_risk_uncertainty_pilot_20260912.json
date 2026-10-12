@@ -13,7 +13,7 @@
   "algorithms": [
     {
       "name": "dnq_dlc_full",
-      "label_cn": "DNQ-DLC full",
+      "label_cn": "DNQ-WM full",
       "kind": "proposed_full",
       "policy": "outputs/physical_quality_development_20260910/model_3000_updates/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",
@@ -48,7 +48,7 @@
     },
     {
       "name": "no_risk_uncertainty",
-      "label_cn": "DNQ-DLC without risk/uncertainty terms",
+      "label_cn": "DNQ-WM without risk/uncertainty terms",
       "kind": "controlled_single_factor_ablation",
       "policy": "outputs/physical_quality_development_20260910/model_3000_updates/graph_risk_dlc_world.graphworld.pt",
       "neighbor_mode": "dynamic",

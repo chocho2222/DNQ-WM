@@ -1,4 +1,4 @@
-"""Opt-in development braking guard; not part of archived DNQ-DLC.
+"""Opt-in development braking guard; not part of archived DNQ-WM.
 
 Uses current telemetry and a conservative rectangular footprint approximation.
 This is a front-gap intervention, not a collision-free control guarantee.

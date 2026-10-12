@@ -140,7 +140,7 @@ def main() -> None:
         "paired_comparisons": comparisons,
         "boundary": (
             "This small matched study measures sensitivity to four independently trained DLC-JTO checkpoints. "
-            "It is supplementary and does not replace the 200-case primary analysis or establish DNQ-DLC training-seed robustness."
+            "It is supplementary and does not replace the 200-case primary analysis or establish DNQ-WM training-seed robustness."
         ),
     }
     report_json = json.dumps(report, indent=2).replace("NaN", "null").replace("Infinity", "null")
