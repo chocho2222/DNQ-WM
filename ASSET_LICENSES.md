@@ -4,16 +4,19 @@
 |---|---|---|
 | Original DNQ-WM software | `code/dlc/`, evaluation and training scripts | MIT |
 | Modified simulator software | `code/gym_multi_car_racing/` | Upstream MIT with original notices retained; author modifications under MIT |
-| Frozen experiment configurations | `configs/`, `reproduce/` | CC BY 4.0 |
+| Frozen experiment configurations | `configs/tits_dynamic_graph_experiments.json`, `configs/tits_dnq_attribution_ablation_20260710.json`, `reproduce/` | CC BY 4.0 |
 | Author-created figures | `figures/` | CC BY 4.0 |
-| DNQ-WM checkpoints | `checkpoints/dnq_wm/`, `checkpoints/quality_actor_k15/`, `checkpoints/wm_k15_*` | CC BY 4.0 |
-| DLC baseline checkpoints | `checkpoints/dlc_baselines/`, `checkpoints/dlc_draws/` | CC BY 4.0 |
+| DNQ-WM checkpoints | `checkpoints/dnq_wm/` | CC BY 4.0 |
+| DLC baseline checkpoints | `checkpoints/dlc_baselines/` | CC BY 4.0 |
 | RL baseline checkpoints | `checkpoints/rl_baselines_strict_20260926/` | CC BY 4.0 |
 
 ## Boundary
 
-The repository ships code, configurations and self-trained checkpoints only. It
-does not contain the per-case evaluation tables, the recorded trajectories, the
+The repository ships the code and the checkpoints that the documented
+reproduction commands load, together with the two configurations those commands
+read. It does not contain the per-case evaluation tables, the recorded
+trajectories, the training-draw checkpoints behind the bracketed ranges of the
+results table, the
 simulation videos, or any track geometry file, and it contains no Assetto Corsa
 executables, car or track models, textures, `.kn5` files or extracted
 game-resource archives. The packaged RL checkpoint metadata records procedural
